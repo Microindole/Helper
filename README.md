@@ -30,12 +30,7 @@
 
 ## 📌 教程目录 (Tutorials Directory)
 
-| 项目/功能 (Project/Feature) | 简要描述 (Description) | 技术栈 (Tech Stack) | 教程链接 (Link) |
-| :--- | :--- | :--- | :--- |
-| 🚀 **动态天气仪表盘** | 一个能实时显示当地天气信息的动态仪表盘。 | `React`, `API`, `CSS` | [🔗 点击查看](./tutorials/weather-dashboard/) |
-| 🎨 **Markdown 编辑器** | 一个支持实时预览的在线 Markdown 编辑器。 | `Vue.js`, `LocalStorage` | [🔗 点击查看](./tutorials/markdown-editor/) |
-| 🤖 **自动化部署脚本** | 使用 GitHub Actions 自动部署静态网站的脚本。 | `YAML`, `GitHub Actions` | [🔗 点击查看](./tutorials/auto-deploy-script/) |
-| ... | ... | ... | ... |
+> 目前在起步，还没有编写
 
 ---
 
