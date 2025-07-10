@@ -98,7 +98,7 @@
 | :---: | :---: |
 | ✨ **前端框架** | [React](https://react.dev/), [Vue.js](https://vuejs.org/) |
 | ⚙️ **后端环境** | [Node.js](https://nodejs.org/) |
-| 🐍 **编程语言** | [Python](https://www.python.org/) |
+| 🐍 **编程语言** | [Python](https://www.python.org/), [Java](https://www.oracle.com/cn/java/technologies/downloads/) |
 | 🐳 **容器化** | [Docker](https://www.docker.com/) |
 | 🚀 **部署平台** | [GitHub Actions](https://github.com/features/actions) |
 | 🛡️ **徽章服务** | [Shields.io](https://shields.io/) |
