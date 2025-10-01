@@ -1,11 +1,12 @@
 Import-Module posh-git
-# $GitPromptSettings.EnableFileStatus = $false
+# $GitPromptSettings.EnableFileStatus = $false # 取消注释则是不需要更详细的 Git 信息
 
 function prompt {
+
     $colors = @{
         ps_prefix     = "Green"
-        path_parent   = "DarkGray" # 父路径使用暗灰色，使其"退后"
-        path_current  = "Cyan"     # 当前目录使用亮青色，使其突出
+        path_parent   = "DarkGray"
+        path_current  = "Cyan"
         git           = "Yellow"
         success       = "Green"
         error         = "Red"
@@ -13,37 +14,29 @@ function prompt {
         prompt_symbol = "White"
     }
 
-    # 显示 "PS" 前缀
-    Write-Host "PS" -NoNewline -ForegroundColor $colors.ps_prefix
+    Write-Host "PS " -NoNewline -ForegroundColor $colors.ps_prefix
 
-    # 如果是管理员权限，显示提示
     $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
-    if ($isAdmin) { Write-Host "[Admin]" -NoNewline -ForegroundColor $colors.admin }
+    if ($isAdmin) { Write-Host "[Admin] " -NoNewline -ForegroundColor $colors.admin }
 
-    # 显示分段着色的路径
-    $fullPath = $pwd.ProviderPath.Replace($HOME, "~")
-    
-    # 获取父路径和当前目录名
-    $parentPath = Split-Path -Path $fullPath -Parent
-    $currentDir = Split-Path -Path $fullPath -Leaf
-    $separator = [System.IO.Path]::DirectorySeparatorChar # 路径分隔符 '\'
+    $displayPath = $pwd.ProviderPath.Replace($HOME, "~")
+    $separator = [System.IO.Path]::DirectorySeparatorChar
 
-    # 如果存在父路径，则先用暗色打印父路径
-    if ($parentPath) {
-        Write-Host " $parentPath" -NoNewline -ForegroundColor $colors.path_parent
+    $parentPath = Split-Path $displayPath -Parent
+    $currentDir = Split-Path $displayPath -Leaf
+
+    if ($parentPath -and $parentPath -ne $displayPath) {
+        $normalizedParent = $parentPath.TrimEnd($separator)
+
+        Write-Host $normalizedParent -NoNewline -ForegroundColor $colors.path_parent
+        Write-Host "$separator$currentDir" -NoNewline -ForegroundColor $colors.path_current
     }
-    
-    # 接着用亮色打印分隔符和当前目录
-    Write-Host "$separator$currentDir" -NoNewline -ForegroundColor $colors.path_current
+    else {
+        Write-Host $displayPath -NoNewline -ForegroundColor $colors.path_current
+    }
 
-
-    # 显示 Git 状态
     $gitStatus = Write-VcsStatus
-    Write-Host $gitStatus -NoNewline -ForegroundColor $colors.git
-
-    # 显示最终的提示符 '>'
+    if ($gitStatus) { Write-Host " $($gitStatus)" -NoNewline -ForegroundColor $colors.git }
     Write-Host " >" -NoNewline -ForegroundColor $colors.prompt_symbol
-
-    # 返回一个空格，确保光标位置正确
     return " "
 }
