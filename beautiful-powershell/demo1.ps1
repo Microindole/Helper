@@ -36,7 +36,7 @@ function prompt {
     }
 
     $gitStatus = Write-VcsStatus
-    if ($gitStatus) { Write-Host " $($gitStatus)" -NoNewline -ForegroundColor $colors.git }
+    if ($gitStatus) { Write-Host "$($gitStatus)" -NoNewline -ForegroundColor $colors.git }
     Write-Host " >" -NoNewline -ForegroundColor $colors.prompt_symbol
     return " "
 }
