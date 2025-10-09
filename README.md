@@ -56,7 +56,7 @@
 
 ## 📄 许可证 (License)
 
-本仓库遵循 [MIT License](./LICENSE) 开源许可协议。
+本仓库遵循 [MulanPSL-2.0 License](./LICENSE) 开源许可协议。
 
 ---
 
