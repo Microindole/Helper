@@ -17,15 +17,6 @@
 
 本仓库旨在通过一个个具体的实例，分享我在编程学习和实践中的经验与成果。每个教程都包含完整的代码、详细的步骤说明和最终效果展示。
 
-**主要技术栈包括 (但不限于):**
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="30" height="30" alt="React" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="30" height="30" alt="Vue.js" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="30" height="30" alt="Node.js" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="30" height="30" alt="Python" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="30" height="30" alt="Docker" />
-</p>
-
 ---
 
 ## 📌 教程目录 (Tutorials Directory)
@@ -96,11 +87,6 @@
 
 | 类别 | 技术 |
 | :---: | :---: |
-| ✨ **前端框架** | [React](https://react.dev/), [Vue.js](https://vuejs.org/) |
-| ⚙️ **后端环境** | [Node.js](https://nodejs.org/) |
-| 🐍 **编程语言** | [Python](https://www.python.org/), [Java](https://www.oracle.com/cn/java/technologies/downloads/) |
-| 🐳 **容器化** | [Docker](https://www.docker.com/) |
-| 🚀 **部署平台** | [GitHub Actions](https://github.com/features/actions) |
 | 🛡️ **徽章服务** | [Shields.io](https://shields.io/) |
 
 </div>
