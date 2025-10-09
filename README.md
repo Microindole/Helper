@@ -2,16 +2,6 @@
 
 欢迎来到我的项目教程仓库！这里存放着我实践过的各种有趣项目和实用小功能的详细教程。希望能帮助到正在学习路上的你！🚀
 
-<div align="center">
-
-[![GitHub Stars](https://img.shields.io/github/stars/Microindole/Helper)](https://github.com/Microindole/Helper/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Microindole/Helper)](https://github.com/Microindole/Helper/network/members)
-[![GitHub License](https://img.shields.io/github/license/Microindole/Helper)](./LICENSE)
-[![Top Language](https://img.shields.io/github/languages/top/Microindole/Helper)]()
-
-</div>
-
----
 
 ## 📚 关于这个仓库 (About This Repository)
 
