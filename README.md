@@ -62,7 +62,7 @@
 
 | | | | |
 | :---: | :---: | :---: | :---: |
-| 📧 **邮箱** | `microindole@gmail.com` | 🚀 **项目主页** | [GitHub](https://github.com/Microindole/Helper) |
+| 📧 **邮箱** | [indoly@microindole.me](mailto:indoly@microindole.me) | 🚀 **项目主页** | [GitHub](https://github.com/Microindole/Helper) |
 | 🐛 **问题反馈** | [Issues](https://github.com/Microindole/Helper/issues) | 💡 **技术交流** | [Discussions](https://github.com/Microindole/Helper/discussions) |
 
 </div>
